@@ -92,7 +92,7 @@ $(document).ready(function () {
 		easing: 'ease-in',
 		delay: 200,
 		opacity: 0,         // 시작할 때 투명도 0
-		reset: true        // 한 번만 실행
+		reset: false        // 한 번만 실행
 	});
 	ScrollReveal().reveal('.impact-img2', {
 		origin: 'top',
@@ -101,7 +101,7 @@ $(document).ready(function () {
 		easing: 'ease-in',
 		delay: 200,
 		opacity: 0,
-		reset: true
+		reset: false
 	});
 
 	ScrollReveal().reveal('.mountain-2', {
