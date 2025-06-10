@@ -1,0 +1,1122 @@
+@font-face {
+    font-family: 'Pretendard Variable';
+    font-weight: 45 920;
+    font-style: normal;
+    font-display: swap;
+    src: url('./woff2/PretendardVariable.woff2') format('woff2-variations');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --color: #0277B8;
+    --orange: #FB613F;
+    --green: #02B8B5;
+    --blk: #3b3b3b;
+    --wht: #FFFFFF;
+    --font-shadow: 0 2px 3px rgba(0, 0, 0, .5);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family: "Poppins", sans-serif;
+    line-height: normal;
+    letter-spacing: -0.6px;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+    text-transform: capitalize;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 200px;
+
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 헤더 시작 */
+header {
+    background-color: var(--color);
+    height: 112px;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.inner {
+    width: 1920px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-nav {
+    width: 1315px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.logo {
+    width: 127px;
+    height: 68px;
+}
+
+.logo img {
+    width: 127px;
+    height: 68px;
+}
+
+nav {
+    display: flex;
+}
+
+.navbar {
+    width: 550px;
+    color: var(--wht);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 70px;
+
+}
+
+.navbar li a {
+    font-family: 'Pretendard-Regular';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.4px;
+
+}
+
+.nav-btns i {
+    background-color: var(--color);
+    color: var(--wht);
+
+}
+
+.nav-btns {
+    display: flex;
+    align-items: center;
+}
+
+.btns a {
+    color: var(--wht);
+    margin-left: 20px;
+    font-size: 17px;
+}
+
+.login {
+    margin-right: 20px;
+}
+
+.open-search {
+    border: 1px solid var(--wht);
+    color: var(--wht);
+    background-color: transparent;
+    border-radius: 53px;
+    display: flex;
+    width: 200px;
+    height: 40px;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    margin-right: 20px;
+
+}
+
+.search>i {
+    position: absolute;
+    left: 160px;
+
+}
+
+.mobile-menu-toggle,
+.mobile-open-search {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    background-color: var(--color);
+    color: var(--wht);
+    font-size: 30px;
+}
+
+.navibar.active {
+    display: block;
+    margin: 0;
+}
+
+.search-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 9999;
+}
+
+.search-box {
+    background: var(--wht);
+    padding: 40px 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    height: 30%;
+    position: relative;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+}
+
+.close-search {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 24px;
+
+}
+
+.search-box input {
+    padding: 10px 15px;
+    font-size: 16px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.submit-btn {
+    padding: 10px 15px;
+    background-color: var(--color);
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.submit-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+}
+
+.search-modal.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+body.lock-scroll {
+    overflow: hidden;
+}
+
+/* 헤더 끝 */
+
+.main-banner {
+    margin: auto;
+    display: grid;
+    place-items: center;
+    height: 917px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+}
+
+
+video {
+    height: 100vh;
+
+    object-fit: cover;
+    display: flex;
+    z-index: -1;
+    overflow-y: hidden;
+}
+
+.main-container {
+    height: 917px;
+    width: 1000px;
+    position: absolute;
+    right: 0;
+    z-index: 2;
+    background: linear-gradient(to left, rgb(251, 97, 63), rgb(251, 97, 63), rgb(251, 97, 63, 0))
+}
+
+.title {
+    width: 50%;
+    position: absolute;
+    right: 15%;
+    top: 30%;
+}
+
+.main-txtbox h1 {
+    font-size: 85px;
+    position: absolute;
+    right: 15%;
+    top: 48%;
+    text-align: right;
+    font-family: 'Pretendard-Regular';
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: -0.4px;
+    color: var(--wht)
+}
+
+.main-txtbox p {
+    font-size: 35px;
+    position: absolute;
+    right: 15%;
+    top: 60%;
+    text-align: right;
+    font-family: 'Pretendard-Regular';
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: -0.4px;
+    color: var(--wht)
+}
+
+.main-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 80px;
+    background-color: var(--green);
+    font-size: 25px;
+    position: absolute;
+    right: 15%;
+    top: 68%;
+    font-family: 'Pretendard-Regular';
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.4px;
+    color: var(--wht)
+}
+
+/* 메인배너끝 */
+
+/* 용도별 카테고리 */
+
+.category {
+    max-width: 200%;
+    height: 654px;
+    display: flex;
+    flex-direction: column;
+    font-style: italic;
+    position: relative;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    padding-left: 200px;
+
+
+
+}
+
+.category-title {
+    font-family: "Poppins";
+    font-size: 26px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.9px;
+    color: var(--blk);
+    position: absolute;
+    left: 300px;
+    top: -70px;
+
+}
+
+/*슬릭이식*/
+
+
+.center-slider1 {
+    margin-left: 300px;
+    margin-top: 40px;
+    width: 2900px;
+}
+
+.center-slider1 .slidebox1,
+.center-slider1 .slidebox2,
+.center-slider1 .slidebox3,
+.center-slider1 .slidebox4,
+.center-slider1 .slidebox5,
+.center-slider1 .slidebox6,
+.center-slider1 .slidebox7 {
+    width: 40vh;
+    margin: 0 15px;
+}
+
+.center-slider1 h1 {
+    padding: 11px 3px 15px 15px;
+    background-color: var(--wht);
+    border: 1px solid rgba(0, 0, 0, .4);
+    font-style: italic;
+    font-family: "Poppins";
+}
+
+.center-slider1 img {
+    width: 40vh;
+    object-fit: cover;
+    background-color: var(--wht);
+    border: 1px solid rgba(0, 0, 0, .4);
+}
+
+.slider-controls button {
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    font-size: 40px;
+    background: rgba(257, 97, 5, 1);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 5;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+#prev {
+    left: 300px;
+}
+
+#next {
+    right: 300px;
+}
+
+/*슬릭 이식*/
+
+
+/*용도별 카테고리 끝*/
+/*아카이브시작*/
+.archive {
+    max-width: 1466px;
+    width: 100%;
+    margin: 200px 300px auto;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.archive-title {
+    font-family: "Poppins";
+    font-size: 26px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.9px;
+    color: var(--blk);
+}
+
+.archive-box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.detail {
+    max-width: 720px;
+    height: 95px;
+    text-overflow: ellipsis;
+    /*줄바꿈*/
+    overflow: hidden;
+    display: -webkit-box;
+    /*아래 몇줄씩 보이는것 정하려면 꼭 필요함*/
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    /*글자가 세로로 떨어지게함*/
+    white-space: normal;
+    padding: 20px;
+}
+
+.img-box1 {
+    position: relative;
+}
+
+.txt-box1 h1 {
+    font-family: "Pretendard regular";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.9px;
+    position: absolute;
+    bottom: 24%;
+    left: 10%;
+    color: var(--wht);
+
+}
+
+.txt-box1 span {
+    font-family: "Poppins", sans-serif;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.9px;
+}
+
+.img-box2 {
+    position: relative;
+}
+
+.txt-box2 h1 {
+    font-family: "Pretendard regular";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.9px;
+    position: absolute;
+    bottom: 24%;
+    left: 10%;
+    color: var(--wht);
+
+}
+
+.txt-box2 span {
+    font-family: "Poppins", sans-serif;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.9px;
+}
+
+/*아카이브 끝*/
+
+/*뉴 시작*/
+.new {
+    /* width: 1291px; */
+    height: 654px;
+    display: block;
+    font-style: italic;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 100px 300px auto;
+
+}
+
+.new-title {
+    font-family: "Poppins";
+    font-size: 26px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.9px;
+    color: var(--blk);
+    width: 1920px;
+}
+
+.new-slider h1 {
+    padding: 11px 3px 15px 15px;
+    background-color: var(--wht);
+    border: 1px solid rgba(0, 0, 0, .1);
+    font-style: italic;
+    font-family: "Poppins";
+}
+
+
+.new-slider {
+    left: -317px;
+    width: 2100px;
+}
+
+.new-slider img {
+    width: 40vh;
+    object-fit: contain;
+    background-color: var(--wht);
+    border: 1px solid rgba(0, 0, 0, .1);
+}
+
+.new-slider .slidebox2-2,
+.new-slider .slidebox2-1,
+.new-slider .slidebox2-3,
+.new-slider .slidebox2-4,
+.new-slider .slidebox2-5,
+.new-slider .slidebox2-6,
+.new-slider .slidebox2-7 {
+    width: 40vh;
+    margin: 0 15px;
+}
+
+.slider-controls button {
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    font-size: 40px;
+    background: rgba(257, 97, 5, 1);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 5;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+#new-prev {
+    top: 285px;
+    left: 0px;
+}
+
+#new-next {
+    top: 285px;
+    right: 0px;
+}
+
+/* 뉴 끝 */
+
+/* 성별,나이별 분류 */
+.by-user-container {
+    width: 100%;
+    height: 1000px;
+    background: url(images/sky.webp);
+    object-fit: cover;
+    position: sticky;
+    border: 1px solid var(--blk);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap
+}
+
+.user-img-box {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.mens,
+.kids,
+.womens {
+    width: 100%;
+
+}
+
+.mens-img-box,
+.kids-img-box,
+.wms-img-box {
+    position: relative;
+}
+
+.mens-txt,
+.womens-txt,
+.kids-txt {
+    position: absolute;
+    color: var(--wht);
+    text-shadow: var(--font-shadow);
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 64px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -1.6px;
+
+}
+
+.mens-txt {
+    top: 40%;
+    left: 35%;
+}
+
+.kids-txt {
+    top: 40%;
+    left: 35%;
+}
+
+.womens-txt {
+    top: 40%;
+    left: 25%;
+}
+
+/* 성별,나이별 분류 끝 */
+
+/*아워임팩트 시작*/
+.our-impact {
+    width: 100%;
+    height: 2984px;
+    position: relative;
+    display: flex;
+}
+
+.impact-title {
+    font-family: "Poppins";
+    font-size: 26px;
+    font-weight: 700;
+    font-style: italic;
+    line-height: normal;
+    letter-spacing: -0.9px;
+    color: var(--blk);
+    position: absolute;
+    left: 236px;
+    top: 120px;
+
+}
+
+.impact-container::before {
+    /*삼각형*/
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-bottom: 1600px solid rgba(2, 119, 184, 0.05);
+    border-left: 1000px solid transparent;
+    border-right: 1000px solid transparent;
+    transform: rotate(262deg);
+    top: 980px;
+    right: 190px;
+}
+
+
+.impact-img1 {
+    width: 1576px;
+    position: absolute;
+    top: 290px;
+    left: 280px;
+
+}
+
+.impact-img2 {
+    width: 720px;
+    position: absolute;
+    top: 870px;
+    left: 1040px;
+
+}
+
+.impact-img1 h2 {
+    position: absolute;
+    bottom: 400px;
+    font-size: 50px;
+    font-weight: 700;
+    font-style: italic;
+    line-height: normal;
+    letter-spacing: -0.9px;
+    color: var(--wht);
+
+}
+
+.impt-img1-txt {
+    position: absolute;
+    left: 60px;
+}
+
+.imp-txt1 {
+    position: absolute;
+    bottom: 330px;
+    line-height: 36px;
+    color: var(--wht);
+    font-family: 'Pretendard-Regular';
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.impact-bt1,
+.impact-bt2 {
+    width: 152px;
+    height: 68px;
+    position: absolute;
+    color: var(--wht);
+    text-align: center;
+    line-height: 68px;
+}
+
+.impact-bt1 {
+    background-color: var(--orange);
+    bottom: 250px;
+    z-index: 6;
+}
+
+.impact-bt2 {
+    background-color: var(--green);
+    bottom: 150px;
+    left: 160px;
+    z-index: 6;
+}
+
+.impt-img2-txt {
+    position: absolute;
+    left: 340px;
+}
+
+.imp-txt2 {
+    position: absolute;
+    bottom: 60px;
+    line-height: 36px;
+    color: var(--wht);
+    font-family: 'Pretendard-Regular';
+    font-weight: 500;
+    font-size: 28px;
+    text-align: right;
+    z-index: 6;
+}
+
+.mountain-1 {
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+}
+
+.mountain-2 {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+/*아워임팩트 끝*/
+
+/* top10시작 */
+.top10 {
+
+    height: 802px;
+    font-style: italic;
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    position: relative;
+    margin-top: 200px;
+
+}
+
+.top10-content::before {
+    content: '';
+    width: 2500px;
+    height: 702px;
+    background-color: var(--color);
+    top: -90px;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+
+}
+
+.top10-title {
+    font-family: "Poppins";
+    font-size: 26px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.9px;
+    color: var(--wht);
+    width: 1920px;
+    position: absolute;
+    top: -40px;
+    left: 300px;
+}
+
+.top10-slider h1 {
+    padding: 11px 3px 15px 15px;
+    font-family: "Poppins";
+    color: var(--wht);
+}
+
+
+.top10-slider {
+    top: 40px;
+    left: -868px;
+    width: 5500px;
+}
+
+.top10-slider img {
+    width: 40vh;
+    object-fit: contain;
+    background-color: var(--wht);
+    border: 1px solid rgba(0, 0, 0, .1);
+}
+
+.top10-slider .slidebox3-2,
+.top10-slider .slidebox3-1,
+.top10-slider .slidebox3-3,
+.top10-slider .slidebox3-4,
+.top10-slider .slidebox3-5,
+.top10-slider .slidebox3-6,
+.top10-slider .slidebox3-7,
+.top10-slider .slidebox3-8,
+.top10-slider .slidebox3-9,
+.top10-slider .slidebox3-10 {
+    width: 40vh;
+    margin: 0 15px;
+}
+
+.slider-controls button {
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    font-size: 40px;
+    background: rgba(257, 97, 5, 1);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 5;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+#top10-prev {
+    top: 285px;
+    left: 300px;
+}
+
+#top10-next {
+    top: 285px;
+    left: 1646px;
+}
+
+/*top10끝*/
+
+/*fly with us시작*/
+.with-us {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 1200px;
+    position: relative;
+
+
+}
+
+.withus-pic {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 200px;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.withus-pic img {
+    margin: 15px;
+}
+
+.withus-pic1,
+.withus-pic2 {
+    display: flex;
+
+}
+
+.with-us-title {
+    position: absolute;
+    top: 120px;
+    left: 284px;
+}
+
+.with-us-title h1 {
+    font-family: "Poppins";
+    font-size: 36px;
+    font-weight: 700;
+    font-style: italic;
+    line-height: normal;
+    letter-spacing: -0.9px;
+    color: var(--blk);
+}
+
+.with-us-title p {
+    font-family: "pretendard Regula";
+    font-size: 26px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.9px;
+    color: var(--blk);
+}
+
+/*fly with us끝*/
+
+/*하단 메세지*/
+.hoka-massage {
+    height: 1007px;
+    background-image: url(images/message.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.massage-box {
+    color: var(--wht);
+    text-align: center;
+    font-family: "Pretendard regula";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.9px;
+}
+
+
+#massage-txtm {
+    display: none;
+    z-index: 1500;
+    color: var(--wht);
+    text-align: center;
+    font-family: "Pretendard regula";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.9px;
+    z-index: 5;
+}
+
+/*하단 메세지 끝*/
+
+footer {
+    height: 530px;
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin-top: 85px;
+    flex-wrap: wrap;
+}
+
+.footer1,
+.footer2,
+.footer3,
+.footer4,
+.footer5 {
+    /* top: 85px;
+    left: 165px; */
+    /* position: absolute; */
+    margin-right: 118px;
+}
+
+footer h3 {
+    margin-bottom: 30px;
+}
+
+footer a {
+    color: var(--blk);
+}
+
+.footer-logo img {
+    height: 100px;
+}
+
+.f-txt1 {
+    margin-bottom: 16px;
+}
+
+.f-txt2 {
+    margin-bottom: 16px;
+}
+
+.sns img {
+    width: 30px;
+    margin-inline: 5px;
+}
+
+.accordion-footer {
+    display: none;
+}
+
+.footer-pc {
+    display: flex;
+}
+
+.accordion-footer {
+    color: var(--blk);
+    padding: 20px;
+    width: 100%;
+    display: none;
+}
+
+.footer-section {
+    margin-bottom: 15px;
+}
+
+.accordion-btn {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 12px 0;
+    font-size: 17px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    color: var(--blk);
+    border-bottom: 1px solid var(--blk);
+}
+
+.accordion-content {
+    list-style: none;
+    padding-left: 10px;
+    padding-top: 5px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.accordion-content li {
+    padding: 8px 0;
+}
+
+.accordion-content li a {
+    text-decoration: none;
+    color: var(--blk);
+    font-size: 15px;
+}
+
+.arrow-icon {
+    transition: transform 0.3s ease;
+}
+
+.footer-section.active .arrow-icon {
+    transform: rotate(180deg);
+}
+
+
+
+.footer-section.active .accordion-content {
+    max-height: 1700px;
+}

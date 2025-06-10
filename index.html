@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /><!--폰트어썸-->
+
+    <!-- Slick Slider CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+    <!-- jQuery & Slick JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+
+
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="media.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="inner">
+            <div class="logo">
+                <a href="#"><img src="images/HOKA-Logo-wh.png" alt=""></a>
+            </div>
+            <div class="header-nav">
+                <nav>
+                    <ul class="navbar">
+                        <li><a href="#none"></a>NEW</li>
+                        <li><a href="#none"></a>WOMAN</li>
+                        <li><a href="#none"></a>MEN</li>
+                        <li><a href="#none"></a>KIDS</li>
+                        <li><a href="#none"></a>APPAREL</li>
+                        <li><a href="#none"></a>EXPLORE</li>
+                    </ul>
+                    <button class="mobile-menu-toggle" aria-label="메뉴열기">
+                        <i class="fa-solid fa-bars"></i></button>
+                </nav>
+
+                <div class="nav-btns">
+                    <button class="open-search" aria-label="SEARCH">
+                        <p class="m-search">SEARCH</p><i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <a href="#none" class="login"><i class="fa-regular fa-user"></i></a>
+                    <a href="#none" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+
+            </div>
+        </div>
+        <div class="search-modal">
+            <div class="search-box">
+                <button class="close-search" aria-label="검색 닫기">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <div class="submit-box">
+                    <input type="text" placeholder="검색어를 입력하세요" />
+                    <button class="submit-btn">검색</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-banner">
+        <video src="images/main.mp4" loop muted autoplay class="video"></video>
+        <div class="main-container">
+            <div class="main-txtbox">
+                <img class="title" src="images/d-mafate-x-logoW.png" alt="">
+                <h1>FAR OUT</h1><br>
+                <p>트레일의 끝을 넘다</p>
+            </div>
+            <a class="main-button" href="#">자세히 보기</a>
+        </div>
+    </div>
+
+    <section class="category">
+        <div class="category-title">
+            <h1>shop by category</h1>
+        </div>
+        <div class="slider-controls">
+            <button id="prev">〈</button>
+            <button id="next">〉</button>
+        </div>
+        <section class="center-slider1">
+            <div class="slidebox1">
+                <img src="images/cate_1_road-run.png" alt="">
+                <h1>road running</h1>
+            </div>
+            <div class="slidebox2">
+                <img src="images/cate_2_trail-run.png" alt="">
+                <h1>trail running</h1>
+            </div>
+
+            <div class="slidebox3">
+                <img src="images/cate_3_Hiking.png" alt="">
+                <h1>hiking</h1>
+            </div>
+
+            <div class="slidebox4">
+                <img src="images/cate_4_lifestyle.png" alt="">
+                <h1>lifestyle</h1>
+            </div>
+
+            <div class="slidebox5">
+                <img src="images/cate_5_Recovery.png" alt="">
+                <h1>Recovery</h1>
+            </div>
+
+            <div class="slidebox6">
+                <img src="images/cate_6_Apparel.png" alt="">
+                <h1>apparel</h1>
+            </div>
+
+            <div class="slidebox7">
+                <img src="images/cate_7_acc.png" alt="">
+                <h1>acc</h1>
+            </div>
+        </section>
+
+    </section>
+
+
+    <section class="archive">
+        <div class="archive-title">
+            <h1>HOKA archive</h1>
+        </div>
+        <div class="archive-box">
+            <div class="img-box1">
+                <div><a href="#none"><img src="images/archive1.jpg" alt=""></a></div>
+                <div class="txt-box1">
+                    <h1>트레일의 끝을 넘다.<br><span> MAFATE X</span></h1>
+                    <div class="txt-box1-2">
+                        <p class="detail">FAR OUT. 트레일의 끝을 넘다 15년 전 UTMB 몽블랑에서 처음 선보인 후, MAFATE 시리즈는 호카를 대표하는 상징적인
+                            트레일
+                            러닝화로 자리잡았습니다. ​울트라 트레일 러너들의 거침없는 도전 정신에서 영감을 받아 탄생한 'MAFATE X'는 울트라 소프트 듀얼 레이어 미드솔과 포크형
+                            카본
+                            플레이트를 적용해 장거리 러닝에서도 탁월한 접지력과 뛰어난 퍼포먼스를 제공하며, 더 멀리 더 빠르게 달릴 수 있도록 설계되었습니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="img-box2">
+                <div><a href="#none"><img src="images/archive2.jpg" alt=""></a></div>
+                <div class="txt-box2">
+                    <h1>러닝을 부드럽게.<br><span>CLIFTON 10</span></h1>
+                    <div class="txt-box2-1">
+                        <p class="detail">데일리 러닝을 위한 CLIFTON은 호카의 베스트 시리즈 중 하나로, 지난 10년간 쿠셔닝과 편안함의 균형을 상징하며 브랜드를
+                            대표하는
+                            제품으로 자리 잡았는데요, 10주년을 맞아 새롭게 선보이는 CLIFTON 10은 디자인 전반에 걸친 세심한 개선과 향상된 착화감, 기능 업그레이드를 통해 더욱
+                            안정적이고 부드러운 주행감을 선사합니다. RUN SMOOTH. CLIFTON 10과 함께 더욱 부드럽게 달려 보세요
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="new">
+        <div class="new-title">
+            <h1>new arrivals</h1>
+        </div>
+        <div class="slider-controls">
+            <button id="new-prev">〈</button>
+            <button id="new-next">〉</button>
+        </div>
+        <section class="new-slider">
+            <div class="slidebox2-1">
+                <img src="images/new/new-1.jpg" alt="">
+                <h1>Women's Stinson 7</h1>
+            </div>
+            <div class="slidebox2-2">
+                <img src="images/new/new-2.jpg" alt="">
+                <h1>All Gender Elevon X</h1>
+            </div>
+
+            <div class="slidebox2-3">
+                <img src="images/new/new-3.jpg" alt="">
+                <h1>Men's Torrent 4</h1>
+            </div>
+
+            <div class="slidebox2-4">
+                <img src="images/new/new-4.jpg" alt="">
+                <h1>Women's Clifton 10</h1>
+            </div>
+
+            <div class="slidebox2-5">
+                <img src="images/new/new-5.jpg" alt="">
+                <h1>ORA Recovery Slide 3</h1>
+            </div>
+
+            <div class="slidebox2-6">
+                <img src="images/new/new-6.jpg" alt="">
+                <h1>Men's Skyflow</h1>
+            </div>
+
+        </section>
+    </section>
+    <section class="by-user">
+        <div class="by-user-container">
+            <div class="user-img-box">
+                <div class="mens-img-box">
+                    <a href="#men"><img class="mens" src="images/category-mens.jpg" alt=""></a>
+                    <p class="mens-txt">mens</p>
+                </div>
+                <div class="kids-img-box">
+                    <a href="#kids"><img class="kids" src="images/category-kids.jpg" alt=""></a>
+                    <p class="kids-txt">kids</p>
+                </div>
+                <div class="wms-img-box">
+                    <a href="#women"><img class="womens" src="images/category-womens.jpg" alt=""></a>
+                    <p class="womens-txt">womens</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="our-impact">
+        <div class="impact-title">
+            <h1>our impact</h1>
+        </div>
+        <div class="impact-container">
+            <div class="impact-img1">
+                <img class="impact-img1-1" src="images/our-impact-1.png" alt="">
+                <div class="impt-img1-txt">
+                    <h2>together for better</h2>
+                    <p class="imp-txt1">HOKA에서는 단호한 낙관주의로 도전을 받아들입니다.<br>
+                        우리 모두에게 더나은 것이 있다는 것을 알기 때문입니다.</p>
+                    <a href="#" class="impact-bt1">자세히 보기</a>
+                </div>
+
+            </div>
+            <div class="impact-img2">
+                <img class="impact-img2-1" src="images/our-impact-2.jpg" alt="">
+                <div class="impt-img2-txt">
+                    <p class="imp-txt2">사람들과 지구에<br>
+                        더 나은 세상을 향해 나아가자.</p>
+                    <a href="#" class="impact-bt2">자세히 보기</a>
+                </div>
+            </div>
+            <div class="mountain">
+                <img class="mountain-1" src="images/c-fhf-mountian-top.png" alt="">
+                <img class="mountain-2" src="images/c-fhf-mountian-bottom-cut" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="top10">
+        <div class="top10-content">
+            <div class="top10-title">
+                <h1>TOP 10</h1>
+            </div>
+            <div class="slider-controls">
+                <button id="top10-prev">〈</button>
+                <button id="top10-next">〉</button>
+            </div>
+            <section class="top10-slider">
+                <div class="slidebox3-1">
+                    <img src="images/new/new-1.jpg" alt="">
+                    <h1>Women's Stinson 7</h1>
+                </div>
+                <div class="slidebox3-2">
+                    <img src="images/new/new-2.jpg" alt="">
+                    <h1>All Gender Elevon X</h1>
+                </div>
+
+                <div class="slidebox3-3">
+                    <img src="images/new/new-3.jpg" alt="">
+                    <h1>Men's Torrent 4</h1>
+                </div>
+
+                <div class="slidebox3-4">
+                    <img src="images/new/new-4.jpg" alt="">
+                    <h1>Women's Clifton 10</h1>
+                </div>
+
+                <div class="slidebox3-5">
+                    <img src="images/new/new-5.jpg" alt="">
+                    <h1>ORA Recovery Slide 3</h1>
+                </div>
+
+                <div class="slidebox3-6">
+                    <img src="images/new/new-6.jpg" alt="">
+                    <h1>Men's Skyflow</h1>
+                </div>
+                <div class="slidebox3-7">
+                    <img src="images/new/top-1.png" alt="">
+                    <h1>Men's Bondi 9</h1>
+                </div>
+                <div class="slidebox3-8">
+                    <img src="images/new/top-2.png" alt="">
+                    <h1>Clifton 9 GORE-TEX</h1>
+                </div>
+                <div class="slidebox3-9">
+                    <img src="images/new/top-3.png" alt="">
+                    <h1>Skyward X</h1>
+                </div>
+                <div class="slidebox3-10">
+                    <img src="images/new/top-4.png" alt="">
+                    <h1>Ora Recovery Slide 3</h1>
+                </div>
+            </section>
+        </div>
+    </section>
+    <section class="with-us">
+        <div class="with-us-title">
+            <h1>fly with us</h1>
+            <p class="with-us-txt">HOKA를 팔로우하고 멋진 순간을 태그 해주세요</p>
+        </div>
+        <div class="withus-pic">
+            <div class="withus-pic1">
+                <div class="pic1">
+                    <img src="images/sns/Frame 152-1.png" alt="">
+                    <img src="images/sns/Frame 152.png" alt="">
+                </div>
+                <div class="pic2">
+                    <img src="images/sns/Frame 153-1.png" alt="">
+                    <img src="images/sns/Frame 153.png" alt="">
+                </div>
+            </div>
+            <div class="withus-pic2">
+                <div class="pic3">
+                    <img src="images/sns/Frame 154-1.png" alt="">
+                    <img src="images/sns/Frame 154.png" alt="">
+                </div>
+                <div class="pic4">
+                    <img src="images/sns/Frame 155-1.png" alt="">
+                    <img src="images/sns/Frame 155.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="hoka-massage">
+        <div class="massage-box">
+            <div class="massage-logo">
+                <img src="images/HOKA-Logo-wh.png" alt="">
+            </div>
+            <div class="massage-txt">
+                <p>프랑스에서 탄생한 프리미엄 러닝 아웃도어 브랜드, HOKA <br>
+                    “목표는 단 한가지, 더 쉽게 달리는 것“ <br>
+                    HOKA만의 독보적이고, 혁신적인 기술력은 <br>
+                    러닝, 트레일 러닝, 하이킹 등 어떠한 환경에서도 완벽한 착화감과 안정성을 제공합니다.</p>
+            </div>
+        </div>
+        <div id="massage-txtm">
+            <p>프랑스에서 탄생한 프리미엄 러닝 아웃도어 브랜드, HOKA <br>
+                “목표는 단 한가지, 더 쉽게 달리는 것“ <br>
+                HOKA만의 독보적이고, 혁신적인 기술력은 <br>
+                러닝, 트레일 러닝, 하이킹 등 어떠한 환경에서도 <br>완벽한 착화감과 안정성을 제공합니다.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer1">
+            <div class="footer-logo"><img src="images/HOKA-Logo.png" alt=""></div>
+            <div class="f-txt1">
+                <p>상호명 주식회사 조이웍스(Joy Works Co.,Ltd.)<br>
+                    대표자 장만식, 조성환<br>
+                    고객센터 031-524-9858<br>
+                    사업자등록번호 7028701483</p>
+            </div>
+            <div class="f-txt2">
+                <p>사업장 소재지경기도 남양주시 순화궁로 426 (우 : 12091)<br>
+                    통신판매업번호2024-별내-2246<br>
+                    e-mailt.eun@joy-works.kr</p>
+            </div>
+            <div class="sns">
+                <a href="#"><img src="images/sns/insta.svg" alt="인스타그램"></a>
+                <a href="#"><img src="images/sns/twitter.svg" alt="트위터"></a>
+                <a href="#"><img src="images/sns/youtube.svg" alt="유튜"></a>
+            </div>
+        </div>
+        <div class="footer-pc">
+            <div class="footer2">
+              <ul>
+                <h3>Company</h3>
+                <li><a href="#none">About HOKA</a></li>
+                <li><a href="#none">Our Story</a></li>
+                <li><a href="#none">Our Impact</a></li>
+                <li><a href="#none">Technology</a></li>
+                <li><a href="#none">Careers</a></li>
+              </ul>
+            </div>
+            <div class="footer3">
+              <ul>
+                <h3>Customer Care</h3>
+                <li><a href="#none">Customer Service & FAQ</a></li>
+                <li><a href="#none">30-Day Guarantee</a></li>
+                <li><a href="#none">Delivery</a></li>
+                <li><a href="#none">Returns & Exchanges</a></li>
+                <li><a href="#none">Warranty Information</a></li>
+                <li><a href="#none">Order Status</a></li>
+                <li><a href="#none">Counterfeit & Phishing</a></li>
+              </ul>
+            </div>
+            <div class="footer4">
+              <ul>
+                <h3>Resources</h3>
+                <li><a href="#none">Size Guide</a></li>
+                <li><a href="#none">Customer Service & FAQ</a></li>
+                <li><a href="#none">Warranty</a></li>
+                <li><a href="#none">Clean & Care</a></li>
+                <li><a href="#none">Careers</a></li>
+                <li><a href="#none">Student Discount</a></li>
+              </ul>
+            </div>
+            <div class="footer5">
+              <ul>
+                <h3>Shop</h3>
+                <li><a href="#none">Sign In</a></li>
+                <li><a href="#none">Road Running</a></li>
+                <li><a href="#none">Trail Running</a></li>
+                <li><a href="#none">Hiking</a></li>
+                <li><a href="#none">Walking</a></li>
+                <li><a href="#none">Shoe Finder</a></li>
+                <li><a href="#none">Find A Store</a></li>
+              </ul>
+            </div>
+          </div>
+        <div class="accordion-footer">
+            <div class="footer-section">
+                <button class="accordion-btn">Company <i class="fa-solid fa-chevron-down arrow-icon"></i></button>
+                <ul class="accordion-content">
+                    <li><a href="#none">About HOKA</a></li>
+                    <li><a href="#none">Our Story</a></li>
+                    <li><a href="#none">Our Impact</a></li>
+                    <li><a href="#none">Technology</a></li>
+                    <li><a href="#none">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <button class="accordion-btn">Customer Care <i class="fa-solid fa-chevron-down arrow-icon"></i></button>
+                <ul class="accordion-content">
+                    <li><a href="#none">Customer Service & FAQ</a></li>
+                    <li><a href="#none">30-Day Guarantee</a></li>
+                    <li><a href="#none">Delivery</a></li>
+                    <li><a href="#none">Returns & Exchanges</a></li>
+                    <li><a href="#none">Warranty Information</a></li>
+                    <li><a href="#none">Order Status</a></li>
+                    <li><a href="#none">Counterfeit & Phishing</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <button class="accordion-btn">Resources<i class="fa-solid fa-chevron-down arrow-icon"></i></button>
+                <ul class="accordion-content">
+                    <li><a href="#none">Size Guide</a></li>
+                    <li><a href="#none">Customer Service & FAQ</a></li>
+                    <li><a href="#none">Warranty</a></li>
+                    <li><a href="#none">Clean & Care</a></li>
+                    <li><a href="#none">Careers</a></li>
+                    <li><a href="#none">Student Discount</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <button class="accordion-btn">Shop<i class="fa-solid fa-chevron-down arrow-icon"></i></button>
+                <ul class="accordion-content">
+                    <li><a href="#none">Sign In</a></li>
+                    <li><a href="#none">Road Running</a></li>
+                    <li><a href="#none">Trail Running</a></li>
+                    <li><a href="#none">Hiking</a></li>
+                    <li><a href="#none">Walking</a></li>
+                    <li><a href="#none">Shoe Finder</a></li>
+                    <li><a href="#none">Find A Store</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
