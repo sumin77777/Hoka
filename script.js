@@ -114,7 +114,7 @@ $(document).ready(function () {
 		reset: true
 	});
 	ScrollReveal().reveal('.mountain-1', {
-		enter: 'bottom',
+		origin: 'bottom',
 		distance: '100px',  
 		duration: 800,
 		easing: 'ease-in-out',
