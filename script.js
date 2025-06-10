@@ -91,7 +91,7 @@ $(document).ready(function () {
 		duration: 800,     // 1초 동안 애니메이션
 		easing: 'ease-in',
 		delay: 200,
-		opacity: 1,         // 시작할 때 투명도 0
+		opacity: 0,         // 시작할 때 투명도 0
 		reset: true        // 한 번만 실행
 	});
 	ScrollReveal().reveal('.impact-img2', {
@@ -100,7 +100,7 @@ $(document).ready(function () {
 		duration: 800,
 		easing: 'ease-in',
 		delay: 200,
-		opacity: 1,
+		opacity: 0,
 		reset: true
 	});
 
@@ -110,7 +110,7 @@ $(document).ready(function () {
 		duration: 200,
 		easing: 'ease-in-out',
 		delay: 0,
-		opacity: 1,
+		opacity: 0,
 		reset: true
 	});
 	ScrollReveal().reveal('.mountain-1', {
@@ -129,7 +129,7 @@ $(document).ready(function () {
 		navbar.classList.toggle('active');
 	});
 
-	const openSearchBtn = document.querySelector('.open-search','mobile-open-search');
+	const openSearchBtn = document.querySelector('.open-search','.mobile-open-search');
 	const closeSearchBtn = document.querySelector('.close-search');
 	const searchModal = document.querySelector('.search-modal');
 
