@@ -91,8 +91,8 @@ $(document).ready(function () {
 		duration: 800,     // 1초 동안 애니메이션
 		easing: 'ease-in',
 		delay: 200,
-		opacity: 0,         // 시작할 때 투명도 0
-		reset: false        // 한 번만 실행
+		opacity: 1,         // 시작할 때 투명도 0
+		reset: true        // 한 번만 실행
 	});
 	ScrollReveal().reveal('.impact-img2', {
 		origin: 'top',
@@ -100,8 +100,8 @@ $(document).ready(function () {
 		duration: 800,
 		easing: 'ease-in',
 		delay: 200,
-		opacity: 0,
-		reset: false
+		opacity: 1,
+		reset: true
 	});
 
 	ScrollReveal().reveal('.mountain-2', {
