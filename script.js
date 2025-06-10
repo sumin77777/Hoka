@@ -86,8 +86,8 @@ $(document).ready(function () {
 	});
 
 	ScrollReveal().reveal('.impact-img1', {
-		origin: 'top',   // 아래에서 위로 올라오기
-		distance: '50px',   // 50px 만큼 이동
+		origin: 'bottom',   // 아래에서 위로 올라오기
+		distance: '150px',   // 50px 만큼 이동
 		duration: 800,     // 1초 동안 애니메이션
 		easing: 'ease-in',
 		delay: 200,
@@ -95,8 +95,8 @@ $(document).ready(function () {
 		reset: true        // 한 번만 실행
 	});
 	ScrollReveal().reveal('.impact-img2', {
-		origin: 'top',
-		distance: '50px',
+		origin: 'bottom',
+		distance: '150px',
 		duration: 800,
 		easing: 'ease-in',
 		delay: 200,
