@@ -86,7 +86,7 @@ $(document).ready(function () {
 	});
 
 	ScrollReveal().reveal('.impact-img1', {
-		origin: 'bottom',   // 아래에서 위로 올라오기
+		enter: 'bottom',   // 아래에서 위로 올라오기
 		distance: '150px',   // 50px 만큼 이동
 		duration: 800,     // 1초 동안 애니메이션
 		easing: 'ease-in',
@@ -95,7 +95,7 @@ $(document).ready(function () {
 		reset: true        // 한 번만 실행
 	});
 	ScrollReveal().reveal('.impact-img2', {
-		origin: 'bottom',
+		enter: 'bottom',
 		distance: '150px',
 		duration: 800,
 		easing: 'ease-in',
@@ -105,7 +105,7 @@ $(document).ready(function () {
 	});
 
 	ScrollReveal().reveal('.mountain-2', {
-		origin: 'bottom',
+		enter: 'bottom',
 		distance: '50px',
 		duration: 200,
 		easing: 'ease-in-out',
@@ -114,7 +114,7 @@ $(document).ready(function () {
 		reset: true
 	});
 	ScrollReveal().reveal('.mountain-1', {
-		origin: 'bottom',
+		enter: 'bottom',
 		distance: '100px',  
 		duration: 800,
 		easing: 'ease-in-out',
